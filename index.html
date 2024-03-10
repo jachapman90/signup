@@ -13,7 +13,7 @@
                 alt="A splash of ferns"
                 class="card-img"
                 width="1862"
-                height="2792">
+                height="2792">                
             <div class="logo">
                 <div class="card-heading">
                     <img src="./img/odin-lined.png"
@@ -21,6 +21,16 @@
                         width="380"
                         height="508">
                     <h1>ODIN</h1>
+                </div>
+            </div>
+            <div id="credit">
+                <div>
+                <p>
+                    Photo by 
+                        <a href="https://unsplash.com/it/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                            Halie West</a> on <a href="https://unsplash.com/it/foto/pianta-a-foglia-verde-in-fotografia-ravvicinata-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                                Unsplash</a>
+                </p>
                 </div>
             </div>
         </div>
@@ -63,15 +73,15 @@
             </div>
             <div>
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password"
+                <input type="password" id="password" class="error"
                     minlength="8"
                     maxlength="16"
                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$">
-                    <p class="error">*Passwords do not match</p>
+                    <p id="errorMsg" class="visible">*Passwords do not match</p>
             </div>
             <div>
                 <label for="confirm">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm"
+                <input type="password" id="confirm" class="error"
                     minlength="8"
                     maxlength="16"
                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$">

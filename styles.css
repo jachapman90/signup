@@ -14,6 +14,14 @@ body {
     font-family: sans-serif;
 }
 
+a:active {
+    color: #596D48;
+}
+
+a:visited {
+    color: #E5E7EB;
+}
+
 .cont {
     display: flex;
     width: 100vw;
@@ -51,6 +59,13 @@ body {
     width: auto;
 }
 
+h1 {
+    font-family: norse, sans-serif;
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
 .card-heading {
     background-color: rgba(0, 0, 0, .5);
     width: 100%;
@@ -61,6 +76,22 @@ body {
     padding: 10px;
 }
 
+#credit {
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+#credit div {
+    justify-content: center;
+    align-items: center; 
+}
+
 .form-cont {
     display: flex;
     width: 66.66%;
@@ -68,6 +99,12 @@ body {
     align-items: flex-start;
     flex-direction: column;
     background-color: #fafafa;
+}
+
+.form-cont p {
+    font-weight: 700;
+    margin-left: 3rem;
+    padding: 0 1em 1em 1em;
 }
 
 .form-cont label {
@@ -131,18 +168,7 @@ fieldset {
     margin-top: 2em;
 }
 
-p {
-    font-weight: 700;
-    margin-left: 3rem;
-    padding: 0 1em 1em 1em;
-}
 
-h1 {
-    font-family: norse, sans-serif;
-    font-size: 4rem;
-    padding: 0;
-    margin: 0;
-}
 
 h2 {
     width: 100%;
@@ -166,10 +192,19 @@ button {
     position: relative;
 }
 
-.error {
+fieldset p {
     position: absolute;
     font-size: .7rem;
     font-weight: 500;
     color: red;
     text-align: start;
-}   
+    visibility: hidden;
+}
+
+.error {
+    border: 1px solid red !important;
+}
+
+.visible {
+    visibility: visible;
+}
